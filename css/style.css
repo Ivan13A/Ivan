@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;800&display=swap');
+
+/*Selector universal*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*selector de etiqueta*/
+a {
+    margin-left: 30px;
+    color: orange;
+}
+
+/* selector por id */
+#option_one,
+#option_three,
+#option_five {
+    color: blueviolet;
+}
+
+#option_two,
+#option_four {
+    color: crimson;
+}
+
+/* selector por clases */
+.group_options {
+    background-color: cadetblue;
+    margin-top: 5px;
+}
+
+.group_class {
+    padding: 10px;
+}
+
+/* selector pseudoclase */
+.group_options:hover {
+    background-color: springgreen;
+    color: black;
+}
+
+/* SELECTOR POR ATRIBUTO */
+[disabled] {
+    background-color: brown;
+}
+
+/* selectores desendentes */
+#papa {
+    border: 2px solid goldenrod;
+    border-radius: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 20px;
+    box-shadow: 0px 5px;
+}
+
+/* selector adyacente */
+#papa .hermanos+.hermanos {
+    color: aqua;
+}
+
+/* selector descendente */
+#papa a {
+    color: rgb(255, 0, 0);
+}
+
+/* selector hijo */
+#papa>#etiqueta>a {
+    color: tomato;
+}
+
+/* titulo para box model */
+#title_box {
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aqua;
+    text-align: center;
+    /* margin-top: 20px; */
+    /* margin-bottom: 20px; */
+    margin: 20px 0;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding-bottom: 30px;
+    box-shadow: 0px 0px 10px 1px #008000;
+    box-shadow: 0px 0px 10px 1px rgba(242, 9, 21, 1);
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(242, 9, 21, 1);
+    -moz-box-shadow: 0px 0px 10px 1px rgba(242, 9, 21, 1);
+    font-size: 40px;
+    letter-spacing: 10px;
+    word-spacing: 20px;
+    text-transform: lowercase;
+}
+#box_father{
+    width: 200px;
+    height: 200px;
+    background-color: #000;
+    background-image: url(https://img.freepik.com/vector-premium/silueta-jugador-futbol-profesional-tomando-tiro-libre-aislado-sobre-fondo-blanco_9955-1323.jpg?w=2000);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+/* #box_model{ */
+    /* width: 50%; */
+    /* height: 50%; */
+    /* background-color: orange; */
+    /* margin: 0 auto; */
+    /* text-align: center; */
+
+/* } */
+/* MEDIA QUERYS */
+@media (min-width: 800px) and (max-width:1200px){
+    body{
+        background-color: red;
+    }
+    h1{
+        text-align: center;
+    }
+
+}
+@media (max-width: 799px){
+    body{
+        background-image: url(https://img.freepik.com/vector-premium/silueta-jugador-futbol-profesional-tomando-tiro-libre-aislado-sobre-fondo-blanco_9955-1323.jpg?w=2000);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+}
